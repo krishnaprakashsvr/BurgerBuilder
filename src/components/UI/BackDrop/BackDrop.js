@@ -1,8 +1,11 @@
 import React from 'react';
-import classes from './BackDrop.css'
+import classes from './BackDrop.css';
 
-const BackDrop=(props)=>{
-    props.show ?<div className={classes.BackDrop}></div>: null
-}
+const BackDrop=(props)=>
+    (props.show ?
+    <div className={classes.Backdrop} 
+        onClick={props.clicked}></div>
+    : null);
+
 
 export default BackDrop
